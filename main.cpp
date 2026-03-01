@@ -3,7 +3,7 @@ using namespace std;
 
 // Partición tipo Hoare
 int partition(int arr[], int low, int high) {
-    int pivot = arr[(low + high) / 2];  // pivote: elemento central
+    int pivot = arr[(low + high) / 2]; // pivote: elemento central
     int i = low - 1;
     int j = high + 1;
 
@@ -33,8 +33,8 @@ void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int p = partition(arr, low, high);
 
-        quickSort(arr, low, p);       // parte izquierda
-        quickSort(arr, p + 1, high);  // parte derecha
+        quickSort(arr, low, p); // parte izquierda
+        quickSort(arr, p + 1, high); // parte derecha
     }
 }
 
